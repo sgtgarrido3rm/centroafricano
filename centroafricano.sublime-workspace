@@ -1,0 +1,342 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"swi",
+				"switch\tswitch …"
+			],
+			[
+				"sw",
+				"switch\tswitch …"
+			],
+			[
+				"in_arr",
+				"in_array()"
+			],
+			[
+				"var",
+				"var_dump()"
+			],
+			[
+				"implo",
+				"implode()"
+			],
+			[
+				"fore",
+				"foreach\tforeach …"
+			],
+			[
+				"Ec",
+				"echo()"
+			],
+			[
+				"str_repl",
+				"str_replace()"
+			],
+			[
+				"EXCE",
+				"EXCEL"
+			],
+			[
+				"exec",
+				"executavel"
+			],
+			[
+				"Usu",
+				"UsuarioID"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 18502,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/centroafricano3/index-2.html",
+		"/C/xampp/htdocs/centroafricano3/event.html",
+		"/C/xampp/htdocs/centroafricano/index.html",
+		"/C/xampp/htdocs/centroafricano3/index.html",
+		"/C/xampp/htdocs/centroafricano3/css/style.css",
+		"/C/Users/ATI/Desktop/Olavo/templatemo_438_layer/index.html",
+		"/C/xampp/htdocs/notas2022/index.php",
+		"/C/Users/ATI/Desktop/Olavo/www/zerofour/index.html",
+		"/C/Users/ATI/Desktop/ProtocoloTimDuda",
+		"/C/xampp/htdocs/daytrade/index2.html",
+		"/C/Users/ATI/Desktop/Olavo/ProjPython/fii/manage.py",
+		"/C/Users/ATI/Desktop/Olavo/ProjPython/fii/manage2.py",
+		"/C/xampp/htdocs/labturismo/1_ordenar.php",
+		"/C/xampp/htdocs/labturismo/2_fibonacci.php",
+		"/C/xampp/htdocs/labturismo/3_sequenciamagica.php",
+		"/C/xampp/htdocs/notas2022/inc/menuLateral.php",
+		"/C/xampp/htdocs/bots1/geeks.php",
+		"/C/Users/ATI/Desktop/Olavo/_form_enviar.php",
+		"/C/xampp/htdocs/labturismo/4_maiorvalorlista.php",
+		"/C/xampp/htdocs/centroafricano3/icon-fonts/themify-icons-font/themify-icons/index.html",
+		"/C/xampp/htdocs/centroafricano3/css/themify-icons.css",
+		"/C/xampp/htdocs/centroafricano3/js/jquery.countdown.js",
+		"/C/xampp/htdocs/centroafricano3/js/main.js",
+		"/C/xampp/htdocs/centroafricano3/js/jquery.countdown-pt-BR.js",
+		"/C/xampp/htdocs/centroafricano3/icon-fonts/fontawesome-webfont3e6e.svg",
+		"/C/xampp/htdocs/centroafricano3/js/map.js",
+		"/C/xampp/htdocs/ottstt2018/php/_form_enviar.php",
+		"/C/xampp/htdocs/labturismo/01_ordenar.php",
+		"/C/xampp/htdocs/notas2022/dist/js/demo.js",
+		"/C/xampp/htdocs/ProjLuzSolar/inc/menuLateral.php",
+		"/C/Users/ATI/Desktop/Olavo/ProjetoLuzSolar/ProjLuzSolar/index.php",
+		"/C/Users/ATI/Desktop/Olavo/ProjetoLuzSolar/ProjLuzSolar/inc/menuLateral.php",
+		"/C/Users/ATI/AppData/Roaming/jupyter/runtime/nbserver-3388-open.html",
+		"/C/xampp/htdocs/apirest/diario.sql",
+		"/C/xampp/htdocs/gazin/index.php",
+		"/C/Users/ATI/Desktop/Olavo/ProjetoLuzSolar/ProjLuzSolar/docs/assets/js/demo.js",
+		"/C/Users/ATI/Desktop/Olavo/ProjetoLuzSolar/ProjLuzSolar/dist/js/demo.js",
+		"/C/xampp/htdocs/gazin/view/Pessoa/listar.php",
+		"/C/xampp/htdocs/gazin/control/PessoaControl.php",
+		"/C/xampp/htdocs/apirest/view/Conteudo/listar.php",
+		"/C/xampp/htdocs/apirest/control/ConteudoControl.php",
+		"/C/xampp/htdocs/apirest/model/Conteudo.php",
+		"/C/xampp/htdocs/apirest/README.md",
+		"/C/xampp/htdocs/apirest/conexao/config.php",
+		"/C/Users/ATI/Desktop/gasolina.py",
+		"/C/Users/ATI/Desktop/views.py",
+		"/C/Users/ATI/Desktop/ProjPython/fii_fundsexplorer/manage.py",
+		"/C/Users/ATI/Desktop/ProjPython/LanHouse/lanhouse.py",
+		"/C/xampp/htdocs/apirest/index.php",
+		"/C/xampp/htdocs/ottstt2018/js/cadastro.js",
+		"/C/xampp/htdocs/gerenciadorottstt/php/buscaCandidato.php",
+		"/C/xampp/htdocs/apirest/conexao/Conexao.php",
+		"/C/Users/ATI/Desktop/ProjPython/fii/manage.py",
+		"/C/Users/ATI/Desktop/ProjPython/fii_fundsexplorer/manage2.py",
+		"/C/Users/ATI/Desktop/ProjPython/fii/manage2.py",
+		"/C/Users/ATI/Desktop/olimpiadas/index.php",
+		"/C/xampp/htdocs/meuportfolio/php/home.php",
+		"/C/xampp/htdocs/meuportfolio/htm/home.htm",
+		"/C/xampp/htdocs/meuportfolio/index.php",
+		"/C/xampp/htdocs/meuportfolio/meuportfolio.sql",
+		"/C/xampp/htdocs/meuportfolio/php/novo.php",
+		"/C/xampp/htdocs/meuportfolio/htm/novo.htm",
+		"/C/xampp/htdocs/meuportfolio/php/exec.php",
+		"/C/xampp/htdocs/meuportfolio/inc/config-local.php",
+		"/C/Users/ATI/Desktop/Udemy/1b-arquivos-aula-alcool-gasolina/alcool-gasolina/js/script.js",
+		"/C/Users/ATI/Desktop/Udemy/1a-arquivos-aula-primeira-aplicacao/primeira-applicacao/script.js",
+		"/C/Users/ATI/Desktop/_form_enviar.php",
+		"/C/Users/ATI/Desktop/templatemo_438_layer/index.html",
+		"/C/Users/ATI/Desktop/Udemy/1a-arquivos-aula-primeira-aplicacao/primeira-applicacao/index.html",
+		"/C/xampp/htdocs/meuportfolio1/deletar.php",
+		"/C/xampp/htdocs/meuportfolio/htm/_Navbar.htm",
+		"/C/xampp/htdocs/ottstt2018/php/sair.php",
+		"/C/xampp/htdocs/ottstt2018/php/formCadastroOtt.php",
+		"/C/xampp/htdocs/ottstt2018/php/buscaCidades.php",
+		"/C/xampp/htdocs/meuportfolio1/view_up.php",
+		"/C/xampp/htdocs/ottstt2018/php/selecionaCursoOtt.php",
+		"/C/xampp/htdocs/mfdv2018/php/buscaEspecialidades.php",
+		"/C/xampp/htdocs/meuportfolio/inc/config.php",
+		"/C/xampp/htdocs/meuportfolio1/view_bsc.php",
+		"/C/xampp/htdocs/namespace/index.php",
+		"/C/xampp/htdocs/meuportfolio/Class/Model/User.php",
+		"/C/xampp/htdocs/meuportfolio1/inc/config.php",
+		"/C/xampp/htdocs/meuportfolio/Class/RN/DespesaRN.php",
+		"/C/xampp/htdocs/meuportfolio/Class/AD/DespesaAD.php",
+		"/C/xampp/htdocs/meuportfolio/view.php",
+		"/C/xampp/htdocs/meuportfolio/htm/perfil.htm",
+		"/C/xampp/htdocs/meuportfolio/php/perfil.php",
+		"/C/xampp/htdocs/meuportfolio/php/sair.php",
+		"/C/xampp/htdocs/meuportfolio/Project/Model/User.php",
+		"/C/xampp/htdocs/namespace/Project/Model/User.php",
+		"/C/xampp/htdocs/namespace/Project/Model/Post.php"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 130.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18502,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "centroafricano.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 209.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
