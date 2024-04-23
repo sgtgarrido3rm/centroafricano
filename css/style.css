@@ -377,7 +377,12 @@ ul {
 	Event Section
 -----------------------*/
 .event-section {
-	background: #dd3e3e;
+	background: #CD950C; /*#dd3e3e;*/
+	padding: 20px 0;
+}
+
+.event-sectionSpotify {
+	background: #009933;
 	padding: 20px 0;
 }
 
