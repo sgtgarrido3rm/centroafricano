@@ -9,7 +9,7 @@
 	*/
 	@session_start();
 	error_reporting(E_ALL);
-	// @header("Content-type: text/html; charset=utf-8");
+	@header("Content-type: text/html; charset=utf-8");
 
 	/**
 	 * Define a data final do processo seletivo
@@ -32,28 +32,28 @@
 	 *
 	 * @name SERVIDOR
 	 */
-	define("SERVIDOR","10.25.111.161");
+	define("SERVIDOR","localhost");
 	
 	/**
 	 * Define o usuario do banco de dados da aplicacao
 	 *
 	 * @name USUARIO
 	 */	
-	define("USUARIO","web_mfdv");
+	define("USUARIO","gisrsi");
 	
 	/**
 	 * Define o senha do banco de dados da aplicacao
 	 *
 	 * @name SENHA
 	 */	
-	define("SENHA","vaST5xeS");
+	define("SENHA","paksiulum");
 		
 	/**
 	 * Define o banco utilizado na aplicacao
 	 *
 	 * @name BANCO
 	 */	
-	define("BANCO","3rm_mfdv");
+	define("BANCO","gisrsi_centroafricano");
 		
 	/**
 	 * Define o tipo de banco de dados da aplicacao
@@ -270,10 +270,12 @@
 	 	define("CAMINHO_INCLUDE","../../../inc/");
 	}
 
-
 	// Includes necessarios
-	require_once(CAMINHO_INCLUDE . 'Funcao.php');
-	require_once(CAMINHO_CLASSE.'Utils/Conexao.php');	
+
+	require_once('Funcao.php');
+	
+	//require_once(CAMINHO_CLASSE.'Utils/Conexao.php');	
+
 	// Funcao padrao que trata todos os tipos de excecoes que ocorrerem
 	set_error_handler('TratarErro');
 ?>

@@ -1,10 +1,26 @@
 <?php 
 	require_once("admin/inc/config.php");
 
+
 	$titulo = '';
 	$texto 	= '';
 
 	$query = "SELECT * FROM principal";
+
+	$logindobancodedados    = 'gisrsi';
+	$senhadobancodedados    = 'paksiulum';
+	$hostdobancodedados     = 'localhost';
+	$nomedobancodedados		= 'gisrsi_centroafricano';
+
+
+	if ($_SERVER['DOCUMENT_ROOT'] !== "C:/xampp/htdocs") {
+		$conn = mysqli_connect($hostdobancodedados,$logindobancodedados,$senhadobancodedados,$nomedobancodedados);
+
+		//$db = mysqli_select_db('gisrsi_centroafricano',$conn);
+		//$result = mysqli_query($conn, "SELECT DATABASE()");
+		//$row = mysqli_fetch_row($result);
+	}
+	
 
 	$stmt = mysqli_stmt_init($conn);
 	
@@ -21,12 +37,31 @@
 	//echo "<pre>"; var_dump($res); die();		
 		//while($row = mysqli_fetch_array($res)){
 			//echo "<pre>"; var_dump($res); die();
-			$titulo = utf8_encode($res["txtTitulo"]);
-			$texto 	= utf8_encode($res["txtTexto"]);
+			$titulo = $res["txtTitulo"];
+			$texto 	= $res["txtTexto"];
 			$imagem = $res["txtImagem"];
 
 
 		//}
+	}
+
+	//$query = "SELECT * FROM evento WHERE dataHora >= '".date('2024-4-26')."' AND ativo = 1";
+	$query = "SELECT * FROM evento WHERE dataHora >= '".date('Y-m-d')."' AND ativo = 1";
+	$stmt = mysqli_stmt_init($conn);
+	
+	if(!mysqli_stmt_prepare($stmt, $query))
+    	exit('SQL error');
+
+   	mysqli_stmt_execute($stmt);
+	$res2 = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt));
+	
+	if($res2){
+		$dataHora 	= $res2["dataHora"];
+		$txtTitulo 	= $res2["txtTitulo"];
+
+		$evento = true;
+	} else {
+		$evento = false;
 	}
 
 	mysqli_close($conn);
@@ -37,7 +72,7 @@
 
 <head>
 <title>Centro Africano Oxalá e Iemanjá</title>
-<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <meta name="description" content="LibChurch Event Template">
 <meta name="keywords" content="event, libChurch, creative, html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -130,7 +165,28 @@
 </div>
 </section>
 
-<?php	
+<?php
+	if (empty($txtTitulo)) {
+		$txtTitulo = 'Nenhum evento hoje';
+		$dia = date('d');
+		$mes = getMesAbreviado(date('m'));
+		$horaEvento = "";
+	} else {
+		$diaArr = explode(" ", $dataHora); 
+		$diaArr = explode("-", DataParaISO($diaArr[0]));
+		$ano 	= $diaArr[2];
+		$dia 	= $diaArr[0];
+		$mes 	= getMesAbreviado($diaArr[1]);
+
+		$horaArr = explode(" ", $dataHora); 
+		$horaArr = $horaArr[1];
+		$horaArr = explode(":", $horaArr);
+		$h 		 = $horaArr[0];
+		$m 		 = $horaArr[1];
+
+		$horaEvento = "<i class='fa fa-calendar'></i> $h:$m hs"; 
+	}
+
 	$sectionContador = "
 		<section class='event-section'>
 			<div class='container'>
@@ -139,11 +195,11 @@
 
 			<div class='event-info'>
 			<div class='event-date'>
-			<h2>22</h2>
-			abr
+			<h2>$dia</h2>
+			$mes
 			</div>
-			<h3>Homenagem ao Pai Ogum</h3>
-			<p><i class='fa fa-calendar'></i> 19:30 hs <i class='fa fa-map-marker'></i> Rua Manoel Lentz da Silva, 23, Santa Tereza, Porto Alegre/RS</p>
+			<h3>$txtTitulo</h3>
+			<p>$horaEvento <i class='fa fa-map-marker'></i> Rua Manoel Lentz da Silva, 23, Santa Tereza, Porto Alegre/RS</p>
 			</div>
 			</div>
 
@@ -418,7 +474,7 @@ Goal: <span>$95,000</span>
 <div class="bi-thumb set-bg" data-setbg="img/Ogum.jpg"></div>
 <div class="bi-content">
 <div class="date">Sessão em 2022<br />&nbsp;</div>
-<h4><a href="single-blog.html">Ogum da Lua</a></h4>
+<h4><a href="javascript: void(0)">Ogum da Lua</a></h4>
 <!--div class="bi-author">by <a href="#">Sofia Joelsson</a></div>
 <a href="#" class="bi-cata">Hope & Faithful</a-->
 </div>
@@ -429,7 +485,7 @@ Goal: <span>$95,000</span>
 <div class="bi-thumb set-bg" data-setbg="img/QuebraDemanda.jpg"></div>
 <div class="bi-content">
 <div class="date">Quebra de Demanda - entre em contato e tire suas dúvidas</div>
-<h4><a href="single-blog.html">Exú Caveira</a></h4>
+<h4><a href="javascript: void(0)">Exú Caveira</a></h4>
 <!--div class="bi-author">by <a href="#">Sofia Joelsson</a></div>
 <a href="#" class="bi-cata">color Story</a-->
 </div>
@@ -440,7 +496,7 @@ Goal: <span>$95,000</span>
 <div class="bi-thumb set-bg" data-setbg="img/Buzios.jpg"></div>
 <div class="bi-content">
 <div class="date">Jogo de Búzios<br />&nbsp;</div>
-<h4><a href="single-blog.html">Agende seu horário</a></h4>
+<h4><a href="javascript: void(0)">Agende seu horário</a></h4>
 <!--div class="bi-author">by <a href="#">Sofia Joelsson</a></div>
 <a href="#" class="bi-cata">Sermon & Pray</a-->
 </div>
@@ -479,7 +535,7 @@ Goal: <span>$95,000</span>
 <p>Rua Manoel Lentz da Silva, 23 - Santa Tereza, Porto Alegre/RS</p>
 <p><span>Email:</span> <a href="javascript: void(0);" class="__cf_email__" data-cfemail="50393e363f10333f3c3f223c39327e333f3d">[email@centroafricanooxalaeiemanja.com.br]</a></p>
 <h4>Telefone:</h4>
-<h5>+55 (51) 98939–0339</h5>
+<h5>+55 (51) 98170–6061</h5>
 </div>
 </div>
 </div>
@@ -493,7 +549,7 @@ Goal: <span>$95,000</span>
 <div class="row">
 <div class="col-sm-6 copyright">
 
-Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Desenvlvido por Garrido
+Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Desenvlvido por Luis Olavo
 
 </div>
 <div class="col-sm-6">
@@ -512,14 +568,20 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 <script src="js/jquery.countdown.js"></script>
 <script src="js/main.js"></script>
 
-<script type="text/javascript">
-  $("#getting-started")
-  .countdown("2023/04/22", function(event) {
-    $(this).text(
-      event.strftime('%D days %H:%M:%S')
-    );
-  });
-</script>
+<?php
+	if ($evento) {
+		echo "<script type='text/javascript'>
+			  $('#getting-started')
+			  .countdown('".$ano."/".$diaArr[1]."/".$dia."', function(event) {
+			    $(this).text(
+			      event.strftime('%D days %H:%M:%S')
+			    );
+			  });
+			</script>";	
+	}
+	
+?>
+
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
 <script src="js/map.js"></script>

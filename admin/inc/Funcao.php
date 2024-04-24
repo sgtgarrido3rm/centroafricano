@@ -24,13 +24,14 @@
 		else 
 		{
 			$data = explode(" ", $data);
+			if (isset($data[1]))
 			$hora = $data[1];
 			$data = explode($strSeparador, $data[0]);
 			$ano = $data[2];
 			$mes = $data[1];
 			$dia = $data[0];
 	
-			if(is_null($hora)){
+			if(!isset($hora)){
 				return $ano."-".$mes."-".$dia;
 			}else{
 				return $ano."-".$mes."-".$dia. " ".$hora;
@@ -736,6 +737,68 @@
 						$lead.'5' => 'Maio', $lead.'6' => 'Junho', $lead.'7' => 'Julho', $lead.'8' => 'Agosto',
 						$lead.'9' => 'Setembro', '10' => 'Outubro', '11' => 'Novembro', '12' => 'Dezembro');
 		return $mesext;
+	}
+
+	/**
+	 *
+	 * @param string $lead (com ou sem zero)
+	 * @return string Formatada
+	 */
+	function getMesAbreviado($mes)
+	{
+		if (!empty($mes) and $mes > 0 and $mes < 13) {
+				
+			switch ($mes) {
+				case 1:
+					$mesAbreviado = 'JAN';
+					break;
+				
+				case 2:
+					$mesAbreviado = 'FEV';
+					break;
+
+				case 3:
+					$mesAbreviado = 'MAR';
+					break;
+
+				case 4:
+					$mesAbreviado = 'ABR';
+					break;
+
+				case 5:
+					$mesAbreviado = 'MAIO';
+					break;
+
+				case 6:
+					$mesAbreviado = 'JUN';
+					break;
+
+				case 7:
+					$mesAbreviado = 'JUL';
+					break;
+
+				case 8:
+					$mesAbreviado = 'AGO';
+					break;
+
+				case 9:
+					$mesAbreviado = 'SET';
+					break;
+
+				case 10:
+					$mesAbreviado = 'OUT';
+					break;
+
+				case 11:
+					$mesAbreviado = 'NOV';
+					break;
+
+				case 12:
+					$mesAbreviado = 'DEZ';
+					break;
+			}
+			return $mesAbreviado;
+		}
 	}
 
 	/**
