@@ -13,22 +13,6 @@
 	//header('Content-Type: text/html; charset=iso-8859-1');
 
 	/**
-	 * Define a data final do processo seletivo
-	 *
-	 * @name DIAFIM
-	 * ex = "dd/mm/aaaa"
-	 */
-	define("DIAFIM","02/07/2018");
-
-	/**
-	 * Define o ano de seleção
-	 *
-	 * @name ANO
-	 * ex = "aaaa"
-	 */
-	define("ANO",date('Y'));
-
-	/**
 	 * Define o ano Copyright
 	 *
 	 * @name COPYRIGHT
@@ -147,13 +131,6 @@
 	 * @name MSG_LOGOFF_SUCESSO
 	 */
 	define("MSG_LOGOFF_SUCESSO",'Logoff realizado com sucesso!');
-
-	/**
-	 * Define a mensagem de erro ao enviar e-mail
-	 *
-	 * @name MSG_ERRO_EMAIL
-	 */
-	define("MSG_ERRO_EMAIL",'Inscrição efetuada com sucesso.<br />E-Mail não pode ser enviado<br />');
 
 	/**
 	 * Define a mensagem de logoff

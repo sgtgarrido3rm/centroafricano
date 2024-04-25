@@ -4,28 +4,12 @@
 	* 
 	* Arquivo de configuracao da aplicacao.
 	* 
-	* @author Sgt Garrido (garrido@3rm.eb.mil.br)
+	* @author Sgt Garrido (sgtgarrido3rm@gmail.com)
 	* @version 0.0.1	
 	*/
 	@session_start();
 	error_reporting(E_ALL);
 	@header("Content-type: text/html; charset=utf-8");
-
-	/**
-	 * Define a data final do processo seletivo
-	 *
-	 * @name DIAFIM
-	 * ex = "dd/mm/aaaa"
-	 */
-	define("DIAFIM","1/08/2017");
-
-	/**
-	 * Define o ano
-	 *
-	 * @name ANO
-	 * ex = "aaaa"
-	 */
-	define("ANO",date('Y'));
 
 	/**
 	 * Define o servidor do banco de dados da aplicacao
@@ -67,8 +51,7 @@
 	 *
 	 * @name TITULO
 	 */
-	$proximoAno = ANO + 1;
-	define("TITULO","Formulário de Inscrição MFDV ".ANO."/".$proximoAno);	
+	define("TITULO","Centro Africano Oxalá e Iemanjá");	
 
 	/**
 	 * Define a imagem do rodape
@@ -76,28 +59,6 @@
 	 * @name IMG_RODAPE
 	 */
 	define("IMG_RODAPE","");
-
-	/**
-	 * Define a imagem do banner das paginas internas
-	 *
-	 * @name BANNER
-	 */
-	define("BANNER",'<img src="../images/Banner_cabecalho_site.jpg" width="780" height="90" />');
-
-	/**
-	 * Define a imagem do banner na pagina principal
-	 *
-	 * @name BANNER_INDEX
-	 */
-	define("BANNER_INDEX",'<img src="images/Banner_cabecalho_site.jpg" width="780" height="90" />');
-
-	/**
-	 * Define a imagem do banner do gerenciador
-	 *
-	 * @name BANNER_GERENCIADOR
-	 */
-	define("BANNER_GERENCIADOR",'<img src="../../images/Banner_cabecalho_site.jpg" width="780" height="90" />');
-
 
 	/**
 	 * Define a mensagem de acesso negado
@@ -111,14 +72,14 @@
 	 *
 	 * @name MSG_ACESSO_NEGADO_BD
 	 */
-	define("MSG_ACESSO_NEGADO_BD",'ERRO DE CONEXÃO. FAVOR CONTACTAR O SERVIÇO MILITAR');
+	define("MSG_ACESSO_NEGADO_BD",'ERRO DE CONEXÃO.');
 
 	/**
 	 * Define a mensagem de erro de gravação dos dados no bd
 	 *
 	 * @name MSG_ERRO_GRAVAR_BD
 	 */
-	define("MSG_ERRO_GRAVAR_BD",'ERRO AO GRAVAR OS DADOS. FAVOR CONTACTAR O SERVIÇO MILITAR');
+	define("MSG_ERRO_GRAVAR_BD",'ERRO AO GRAVAR OS DADOS.');
 
 	/**
 	 * Define a mensagem de consulta vazia
@@ -146,7 +107,7 @@
 	 *
 	 * @name MSG_SUCESSO
 	 */
-	define("MSG_ERRO_EMAIL",'Dados gravados com sucesso.<br />E-mail de confirmação não foi enviado.');
+	define("MSG_ERRO_EMAIL",'Dados gravados com sucesso.');
 
 	/**
 	 * Define a mensagem de dados atualizados com sucesso
@@ -170,40 +131,40 @@
 	define("MSG_LOGOFF_SUCESSO",'Logoff realizado com sucesso!');
 
 	/**
-	 * Define o e-mail do administrador da 3ª RM
+	 * Define o e-mail do administrador
 	 *
 	 * @name EMAIL
 	 */	
-	define("EMAIL","sermilmfdv@3rm.eb.mil.br");
+	define("EMAIL","sgtgarrido3rm@gmail.com");
 	
 	/**
-	 * Define o asssunto da inscricao
+	 * Define o asssunto do E-Mail
 	 *
 	 * @name ASSUNTO
 	 */
 
-	define("ASSUNTO","3RM - Inscrição MFDV ".ANO."/".$proximoAno);
+	define("ASSUNTO","Centro Africano Oxalá e Iemanjá");
 	
 	/**
 	 * Define o nome que aparecera no remetente dos e-mails
 	 *
 	 * @name NOME_EMAIL
 	 */
-	define("NOME_EMAIL","Serviço Militar da 3ª RM");
+	define("NOME_EMAIL","Pai Fábio de Oxalá");
 	
 	/**
 	 * Define o dominio do site
 	 *
 	 * @name DOMINIO
 	 */
-	define("DOMINIO","http://".$_SERVER['HTTP_HOST']."/Servico_Militar/inscricao/mfdv".ANO."/");	//SERVIDOR WWW
+	define("DOMINIO","http://".$_SERVER['HTTP_HOST']."/");	//SERVIDOR WWW
 
 	/**
 	 * Define o caminho dos arquivos
 	 *
 	 * @name PATH
 	 */
-	define("PATH",$_SERVER['DOCUMENT_ROOT']."/Servico_Militar/inscricao/mfdv".ANO."/"); //produção
+	define("PATH",$_SERVER['DOCUMENT_ROOT']."/"); //produção
 
 	/**
 	 * Define o nome que aparecera no remetente dos e-mails
@@ -231,7 +192,7 @@
 	/**
 	* DEFINIÇÃO DINÂMICA DA CONSTANTE DO DIRETÓRIO DAS CLASSES
 	* 
-	* @author Garrido <garrido@3rm.eb.mil.br>
+	* @author Garrido <sgtgarrido3rm@gmail.com>
 	*/
 	if(is_dir("classe"))	
 	{	
@@ -252,7 +213,7 @@
 	/**
 	* DEFINIÇÃO DINÂMICA DA CONSTANTE DO DIRETÓRIO DE INCLUDES
 	* 
-	* @author Garrido <garrido@3rm.eb.mil.br>
+	* @author Garrido <sgtgarrido3rm@gmail.com>
 	*/
 	if(is_dir("inc"))
 	{	
